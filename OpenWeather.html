@@ -1,0 +1,58 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Web APIs</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="manifest" href="site.webmanifest">
+        <link rel="apple-touch-icon" href="icon.png">
+        <!-- Place favicon.ico in the root directory -->
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+<body style="height:1500px">
+
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <a class="navbar-brand" href="#">Using Web APIs</a>
+            </div>
+            <ul class="nav navbar-nav">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="giphy.html">Giphy</a></li>
+              <li class="active"><a href="#">OpenWeather</a></li>
+              <li><a href="#">Twitter</a></li>
+            </ul>
+          </div>
+        </nav>
+
+
+        <div class="container-fluid" style="margin:60px">
+            <div class="jumbotron">
+                <div class="mx-auto" style="text-align:center">
+                  <p>Type in your US zipcode to retrieve current temperature and condition for that city.</p>
+                    <input id="searchtext" type="text" placeholder="search">
+                    <button id="searchWeather" type="submit" onclick="getData()">Search</button>
+                        <br>
+                        <br>
+                </div>
+                <div class="temp"></div>
+                <div class="description"></div>
+            </div>
+        </div>
+        
+
+        <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/OW.js"></script>
+    </body>
+</html>
